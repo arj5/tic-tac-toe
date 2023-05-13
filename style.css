@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+     --winning: rgb(0,0,0,0.2);
+}
+#board {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 100px;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+.container{
+    align-items: center;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(100deg, rgb(255, 149, 144)0%, rgb(255, 188, 112)100%);
+    text-align: center;
+    overflow: hidden;
+
+}
+
+h1{
+    font-family: futura;
+    color: azure;
+}
+h2{
+    font-family: futura;
+    color: azure;  
+    height: 7vh;
+}
+button {
+    font-family: futura;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.266);
+    color: azure;
+    border-color: rgb(255, 149, 144);
+    font-size: 15px;
+    transition: 100ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#score {
+    font-family: futura;
+    color: azure;
+    font-size: 50px;
+
+}
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505C;
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+} */
