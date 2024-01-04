@@ -4,10 +4,6 @@
     box-sizing: border-box;
     
 }
-body { 
-    display: flex;
-    flex-direction: column;
-}
 
 :root {
      --winning: rgb(0,0,0,0.2);
@@ -62,7 +58,6 @@ body{
 h1{
     font-family: futura;
     color: azure;
-    
 }
 h2{
     font-family: futura;

@@ -1,28 +1,10 @@
-/*
-
-on click add element in div
-
-tehn cant click in that box again
-
-switch between x and o
-
-winning 
-
-3 cross
-else tie
-
-new game on lcick clears divs
-
-
-*/
-
 
 let playerText = document.getElementById("playerText")
 let newGame = document.getElementById("newGame")
 let boxes = Array.from(document.getElementsByClassName("box"))
 let score = document.getElementById("score")
 
-// console.log(boxes)
+
 
 
 
@@ -36,7 +18,7 @@ let currentPlayer = X
 
 let boxSpace = Array(9).fill(null)
 
-console.log(boxSpace)
+// console.log(boxSpace)
 
 let winX = 0
 let tie = 0
@@ -80,7 +62,7 @@ function boxClicked(event){
                 win0 +=1
             }
 
-            console.log(winX)
+            // console.log(winX)
             score.innerText = `${winX} - ${tie} - ${win0}`
             let blocks = win()
         
@@ -97,10 +79,7 @@ function boxClicked(event){
 
         
     }
-    // elif (win()!=false){
-    //     event.target.innerText = ""
-    // }
-    
+
    
 }
 
